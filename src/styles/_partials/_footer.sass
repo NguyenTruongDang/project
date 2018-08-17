@@ -1,3 +1,26 @@
 footer
-	img 
-		max-width: 200px
+	background: darken(#3c5499,20%)
+	padding: 2rem 0
+	ul.fix
+		text-align: center
+		li
+			background: none
+			border: 0
+			a 
+				color: #fff
+	+media-breakpoint-up(sm)
+		ul.fix
+			flex-wrap: wrap
+			flex-direction: initial
+			li
+				flex: 0 0 50%
+				max-width: 50%
+	+media-breakpoint-up(md)
+		ul.fix
+			justify-content: center
+			li
+				flex: initial
+				max-width: initial
+
+
+

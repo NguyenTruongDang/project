@@ -1,2 +1,26 @@
-body
-	font-family: Roboto
+.home-form
+		background:  #3c5499
+		min-height: 550px
+		text-align: center
+		align-items: center
+		display: flex
+		.home-form-fixWight
+			+media-breakpoint-up(sm)
+				max-width: 50%
+		h2 
+			color: white
+		p 
+			color: white
+			font-size: 12px
+		input,
+		textarea 
+			background: darken(#3c5499,10%)
+			border-color: darken(#3c5499,10%)
+			&:active,
+			&:focus
+				background: darken(#3c5499,15%)
+				border-color: darken(#3c5499,15%)
+			&::-webkit-input-placeholder
+				color: #fff
+		
+	

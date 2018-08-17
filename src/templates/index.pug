@@ -6,12 +6,21 @@ block variables
 	- var bodyclass = 'home'
 
 block body
-	section.home
-		.container
+	section.home-form
+		.container.home-form-fixWight
 			.row
+				.col.mb-5
+					.title-page.title-xam
+						h2 GET IN TOUCH
+						p 1600 Pennsylvania Ave NW, Washington,DC 20500,United States of America. Tel: (202) 456 -1111
+			.row.form-group.mb-0.mb-sm-3
+				.col-sm-6.mb-1
+					input.form-control(type="text" placeholder="Your Name*")
+				.col-sm-6.mb-1
+					input.form-control(type="text" placeholder="Your Email*")
+			.row.form-group
 				.col
-					.jumbotron.text-center.mt-4
-						h1.hidden-md-up.display-4 Awesome Bootstrap Sites!
-						h2.hidden-md-up Dễ dàng triển khai và sử dụng
-						p.lead Bộ công cụ phát triển web vô cùng mạnh mẽ dựa trên nền tảng Bootstrap.
+					textarea.form-control(cols="30" rows="10" placeholder="Your Message*")
+
+
 
